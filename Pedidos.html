@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedidos de Hamburguesas</title>
+    <title>Pedidos </title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color:white;
+            background-color:rgb(233, 194, 146);
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,11 +17,11 @@
         }
 
         .container {
-            background-color: rgb(202, 134, 51);
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 0 20px black;
             width: 300px;
+            border: 2px solid rgb(31, 30, 30);
         }
 
         h1 {
@@ -49,7 +49,7 @@
         button {
             padding: 10px;
             background-color: #ff6b6b;
-            color: white;
+            color:rgb(233, 194, 146);
             border: none;
             border-radius: 4px;
             cursor: pointer;
@@ -68,28 +68,39 @@
 
     <div class="container">
 
-        <h1>Pedido de Hamburguesa</h1>
+        <h1>Realiza tu pedido:</h1>
         <form id="contactForm" action="https://formspree.io/f/mnnaaarj" method="POST">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
             <label for="direccion">Direccion:</label>
             <input type="text" id="direccion" name="direccion" required>
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono" required>
 
-            <label for="hamburguesa">Tipo de Hamburguesa:</label>
+            <label for="hamburguesa">Opciones del Menu:</label>
             <select id="hamburguesa" name="hamburguesa">
                 <option value="clasica"> Burger Clásica</option>
                 <option value="cordero">Burger de Cordero</option>
                 <option value="vegetariana">Empanadas Arabes</option>
                 <option value="lomito">Lomito Especial Super W-B</option>
+                <option value="clasica">Pizza Primavera</option>
+                <option value="clasica">Burger Clasica Celeste</option>
+                <option value="clasica">Sandwich de Milanesa Especial</option>
             </select>
-
-            <label for="cantidad">Cantidad:</label>
-            <input type="number" id="cantidad" name="cantidad" min="1" required>
+            <label for="metodo">Opciones de Pago</label>
+            <select id="pagos" name="pagos">
+                <option value="efectivo"> Efectivo</option>
+                <option value="Transferencia">Transferencia</option>
+                <option value="tarjeta">Tarjeta</option>
+            </select>
+            
+            <label for="compra">Compra:</label>
+            <input type="number" id="compra" name="compra" min="1" required>
 
             <button type="submit">Hacer Pedido</button>
         </form><br>
         
-        <a href="index.html">Volver a la pagina anterior</a> 
+        <button type="button" class="btn btn-outline-danger"><a href="index.html">Volver a la pagina principal.</a> </button>
     </div>
     
 </body>

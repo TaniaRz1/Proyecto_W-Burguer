@@ -1,30 +1,57 @@
  *{
     margin: 10px;
  }
- 
+ h6{
+    padding: 20px 20px 0 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+h4, p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+.carousel, .carousel-inner > .item > img{
+    height: 300px;
+    width: 300px;
+}
+/* .carousel-inner{
+    height: 200px;
+} */
+/* .image-container{
+    padding-left: 5px;
+    margin-left: 15px;
+    width: 360px;
+} */
  nav ul {
     width: 100%;
     margin: auto;
     list-style: none;
-    background-color:  rgb(209, 135, 45);
+    background-color: rgb(233, 194, 146);;
     text-align: center;
+    
 
  }
  nav li{
     display: inline-flex;
     text-align: center;
-
     
- }
+}
 
 nav a {
     padding: 20%;
     width: 70%;
     color: black;
+    text-decoration: none;
  }
  
  nav ul a:hover {
+    padding: 10px;
     background-color: beige;
+    width: 90px;
+ }
+ .logo:hover{
+    transform: scale(1.8);
+    transition: 1s ease;
  }
 
 
@@ -33,34 +60,48 @@ nav a {
     justify-content: flex-start;
 }
 
-.carousel-inner  {
-    width: 1000px;
-    padding: 20%;
-}
+
 div{
-    width: 200px;
-    height: 300px;
-    background:black;
-    max-width: 200px;
+    /* width: 200px;
+    height: 300px; */
+    background:rgb(255, 252, 252);
+    max-width: 1200px;
     justify-content: center;
 }
-.carousel-control-prev,
-.carousel-control-next {
-    width: 640;
-    display: auto;
-    text-align: center;
-    
-}
+  /* div .img {
+    width: 20px;
+    height: 30px;
 
+ } */
 div a {
     color: black;
 }
 
+h4{
+    font-family: Arial, sans-serif;
+}
+.container {
+    text-align: center;
+ 
+}
 
+.image-container {
+    display: flex;
+    justify-content: center
+    
+}
+
+.responsive-image {
+    width: 300px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Asegúrate de que todas las imágenes tengan el mismo tamaño */
+    margin: 10px; /* Espaciado entre imágenes */
+    object-fit:cover; /* Mantiene la proporción de la imagen y evita distorsión */
+    padding: 50px,
+}
 
 footer {
-    background-color:  rgb(209, 135, 45);
-    color: white;
+    background-color:  rgb(233, 194, 146);
+    color: rgb(15, 15, 15);
     text-align: center;
     padding: 1rem;
 }
@@ -76,3 +117,4 @@ footer {
 .social-icons li {
     display: inline;
 }
+
