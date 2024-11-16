@@ -1,5 +1,7 @@
  *{
     margin: 10px;
+    flex-wrap: wrap;
+    
  }
  h6{
     padding: 20px 20px 0 20px;
@@ -9,12 +11,13 @@ h4, p{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-
+.section{
+    padding: 100px;
+    position: center;
+}
 .carousel, .carousel-inner > .item > img{
     height: 200px;
     width: 400px;
-
-
 }
 /* .carousel-inner{
     height: 200px;
@@ -101,7 +104,6 @@ footer {
     background-color:  rgb(233, 194, 146);
     color: rgb(15, 15, 15);
     text-align: center;
-    padding: 1rem;
 }
 
 .social-icons {
